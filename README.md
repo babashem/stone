@@ -1,2 +1,0 @@
-# stone
-shems website
