@@ -1,0 +1,542 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: Monoment;
+    src: url(font/PersonalUse_Monoment.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    width: 100%;
+    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+.nav h1{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Montserrat , sans-serif;
+    position: absolute;
+    font-size: 3em;
+    left: 6%;
+    bottom: 80%;
+}
+.nav .products{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Montseratt , sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+}
+.nav .contacts{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Montseratt , sans-serif;
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+.nav .stuff{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Montseratt , sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height: 500px; /* Set a fixed height for the slideshow */
+    overflow: hidden; /* Hide any overflowing content */
+    margin-top: 10%;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%; /* Make the slide fill the container */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.services h1{
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    font-family: Montseratt , sans-serif;
+}
+.services h2{
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    font-family: Montseratt , sans-serif;
+    font-size: 1.5em;
+}
+.services h3{
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    font-family: Montseratt , sans-serif;
+    font-size: 1.5em;
+}
+.services h4{
+    position: absolute;
+    left: 50%;
+    bottom: -25%;
+    font-family: Montseratt , sans-serif;
+    font-size: 1.5em;
+}
+.footer{
+    font-family: Montserrat , sans-serif;
+    font-size: 14px;
+    position: absolute;
+    left: 46%;
+    align-items: center;
+}
+.footerp{
+    font-family: Montserrat , sans-serif;
+    font-size: 14px;
+    position: absolute;
+    left: 46%;
+    align-items: center;
+    top: 180%;
+    margin-top: auto; /* Push the footer to the bottom */
+    background-color: #000000; /* Optional: Add a background color */
+    padding: 20px; /* Optional: Add padding */
+    text-align: center; /* Optional: Center text */
+}
+.services h5{
+    position: absolute;
+    left: 50%;
+    bottom: -30%;
+    font-family: Montseratt , sans-serif;
+    font-size: 1.5em;
+}
+.serbtn button{
+    position: absolute;
+    left: 65%;
+    bottom: -30%;
+    font-family: Montseratt , sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+.serbtn button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
+    gap: 20px; /* Adds spacing between the grid items */
+    padding: 20px;
+}
+
+.product-card {
+    width: 100%;
+    border: 1px solid #000000;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Required for absolute positioning of the button */
+    top: 50%;
+    right: 7%;
+    font-family: Montseratt , sans-serif;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.quick-view-btn {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product-card:hover .quick-view-btn {
+    opacity: 1; /* Show on hover */
+}
+.product-details{
+    font-family: Montseratt ,sans-serif;
+    font-size: 1.5em;
+}
+.product-details h2{
+    position: absolute;
+    left: 65%;
+    bottom: 60%;
+    font-family: Montseratt , sans-serif;
+}
+.product-details img {
+    width: 50%;
+    left: 3%;
+    position: absolute;
+    top: 40%;
+}
+.product-details .price{
+    position: absolute;
+    left: 65%;
+    bottom: 50%;
+    font-family: Montseratt , sans-serif;
+}
+.product-details p{
+    position: absolute;
+    left: 65%;
+    bottom: 40%;
+    font-family: Montseratt , sans-serif;
+}
+.product-details button{
+    position: absolute;
+    left: 65%;
+    bottom: 40%;
+    font-family: Montseratt , sans-serif;
+    color: white;
+    background-color: #000000;
+    width: 10%;
+}
+.cart{
+    color: rgb(255, 255, 255);
+    font-family: Montseratt , sans-serif;
+    left: 90%;
+    position: absolute;
+    top: 9%;
+    background-color: black;
+    text-decoration: none;
+    size: 10%;
+}
+.phone{
+    font-family: Montserrat , sans-serif;
+}
+.prohub button{
+    font-family: Montserrat , sans-serif;
+    font-size: 2em;
+    position: absolute;
+    color: #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+    top: 170%;
+    left: 41%;
+}
+.prohub button:hover{
+    color: #ffffff;
+    background-color: #000000;
+}
+.footer-item a i{
+    font-size: 24px; /* Adjust the size as needed */
+    color: black; /* Change the color */
+    margin-right: 11px; /* Add spacing between icons */
+    transition: color 0.3s ease; /* Add a smooth transition for hover effect */
+}
+.footer-item a:hover i {
+    color: rgb(121, 121, 121); /* Change the color on hover */
+  }
+.backl button{
+    font-family: Montserrat , sans-serif;
+    font-size: 2em;
+    position: absolute;
+    color: #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+    top: 93%;
+    left: 41%;
+    border: black;
+}
+.backl button:hover{
+    color: #ffffff;
+    background-color: #000000;
+    border: #ffffff;
+}
+.cont .phone{
+    font-family: Montserrat , sans-serif;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 33%; 
+    top: 50%;
+}
+.cont .insta button{
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(red,orange,yellow,pink);
+    border: none;
+    position: absolute;
+    left: 30%;
+    top: 60%;
+    font-size: 30px;
+}
+.cont .tik button{
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(109, 16, 16),orange,yellow,pink);
+    border: none;
+    position: absolute;
+    left: 43%;
+    top: 60%;
+    font-size: 30px;
+}
+.cont .tel button{
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(blue,white,lightblue);
+    border: none;
+    position: absolute;
+    left: 50.5%;
+    top: 60%;
+    font-size: 30px;
+}
+.cont .dis button{
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(purple,pink,blue);
+    border: none;
+    position: absolute;
+    left: 63.5%;
+    top: 60%;
+    font-size: 30px;
+}
+.cont .email{
+    font-family: Montserrat , sans-serif;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 33%; 
+    top: 45%;
+}
+.portfolio{
+    font-family: Montserrat , sans-serif;
+}
+.portfolio .port1{
+    font-family: Montserrat , sans-serif;
+    position: absolute;
+    left: 16%; 
+    top: -50%;
+    font-size: 40em;
+}
+.portfolio .port2{
+    font-family: Montserrat , sans-serif;
+    position: absolute;
+    left: 16%; 
+    top: 100%;
+}
+.portfolio .port3{
+    font-family: Montserrat , sans-serif;
+    position: absolute;
+    left: 45%; 
+    top: 86%;
+    color: rgb(255, 255, 255);
+    font-size: 10em;
+}
+.portfolio .port4{
+    position: absolute;
+    top: 130%;
+    left: 46%;
+    font-size: 3em;
+}
+.portfolio .port5{
+    position: absolute;
+    top: 150%;
+}
+.portfolio .port6{
+    position: absolute;
+    top: 150%;
+    left: 28%;
+}
+.portfolio .port7{
+    position: absolute;
+    top: 150%;
+    left: 44%;
+}
+.portfolio .port8{
+    position: absolute;
+    top: 150%;
+    left: 55%;
+}
+.portfolio .port9{
+    position: absolute;
+    top: 150%;
+    left: 70%;
+}
+.portfolio .port10{
+    position: absolute;
+    top: 150%;
+    left: 83%;
+}
+.portfolio .port11{
+    position: absolute;
+    top: 160%;
+    left: 43%;
+}
+.portfolio .port12{
+    position: absolute;
+    top: 170%;
+    font-size: 5em;
+    left: 17%;
+}
+.portfolio .port13{
+    position: absolute;
+    top: 190%;
+    font-size: 1.3em;
+    left: 3%;
+}
+.portfolio .port14{
+    position: absolute;
+    top: 200%;
+    left: 1.5%;
+}
+.portfolio .port16 button{
+    position: absolute;
+    top: 220%;
+    left: 35%;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 5em;
+    border: none;
+}
+.portfolio .port16 button:hover{
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+.portfolio .port15{
+    position: absolute;
+    top: 230%;
+    left: 4%;
+}
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .services h1, 
+    .services h2,
+    .services h3,
+    .services h4,
+    .services h5 {
+        position: static;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .product-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .product-details img,
+    .product-details h2,
+    .product-details .price,
+    .product-details p,
+    .product-details button {
+        position: static;
+        width: auto;
+        margin: 0.5rem 0;
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .cont .phone,
+    .cont .email,
+    .cont button {
+        position: static;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Add responsive font sizes */
+:root {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+        font-size: 14px;
+    }
+}
+.carti h1{
+    color: rgb(255, 255, 255);
+    font-family: Montseratt , sans-serif;
+    left: 48%;
+    position: absolute;
+    top: 15%;
+    text-decoration: none;
+    size: 10%;
+}
+.checkout-btn{
+    color: rgb(255, 255, 255);
+    font-family: Montseratt , sans-serif;
+    left: 45.5%;
+    position: absolute;
+    top: 25%;
+    text-decoration: none;
+    size: 10%;
+    background-color: rgb(0, 0, 0);
+}
